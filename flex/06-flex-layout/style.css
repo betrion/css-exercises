@@ -25,3 +25,21 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+.header {
+  display:flex;
+  border:1px solid red;
+  
+
+}
+.header .left-links {
+  border: rgb(200, 94, 233) 1px solid;
+  list-style-type: none;
+  display:flex;
+  justify-content: center;
+}
+a:link, a:visited{
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+  
+}
