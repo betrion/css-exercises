@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -25,21 +27,58 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
-
 .header {
-  display:flex;
-  border:1px solid red;
-  
+  display: flex;
+  position: 10vh;
+  justify-content: space-between;
+  flex:1;
+
 
 }
-.header .left-links {
-  border: rgb(200, 94, 233) 1px solid;
-  list-style-type: none;
-  display:flex;
-  justify-content: center;
+.header ul {
+  display: flex;
+  gap:1rem;
 }
-a:link, a:visited{
-  color: rgb(128, 128, 128);
+
+
+.header .left-links, .header .right-links {
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+
+}
+.content {
+  flex: 2;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.content .buttons, .content .input {
+  align-self: center;
+}
+a {
+  color: grey;
   text-decoration: none;
-  
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer {
+  display: flex;
+  position: 10vh;
+  justify-content: space-between;
+  background-color: rgba(211, 211, 211, 0.719);
+
+
+}
+.footer ul {
+  display: flex;
+  gap:1rem
+}
+
+
+.footer .left-links, .footer .right-links {
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+
 }
